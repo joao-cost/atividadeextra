@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividade Opcional</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Cliente</h1>
+        <form id="form-cadastro" class="fade-in">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="Digite o nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Digite o e-mail" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="Digite o telefone" required>
+            <label for="observacao">Observação:</label>
+            <textarea id="observacao" name="Registe alguma observação..." rows="4"></textarea>
+            <hr>
+            <button type="button" id="btn-enviar">Enviar</button>
+        </form>
+    </div>
+    <div id="tabela-dados">
+        <h2>Dados do Cliente</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Observação</th>
+            </tr>
+            <tr id="dados-cliente"></tr>
+        </table>
+        <button id="btn-voltar">Voltar</button>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
